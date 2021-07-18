@@ -1,0 +1,753 @@
+<html  lang="ar" dir="rtl" class="h-100">
+   
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+
+   <!-- ***** CSS Files ***** -->
+
+   <!-- Kendo CSS -->
+   <link href="./lib/kendo/styles/kendo.eoc.css" rel="stylesheet"/>
+   <link href="./lib/kendo/styles/kendo.bootstrap.mobile.min.css" rel="stylesheet"/>
+
+   <!-- Icons Fonts -->
+   <link rel="stylesheet" type="text/css" href="./lib/fonts/materialicons/materialicons.css"/>
+   
+
+   <!-- Bootstrap -->
+   <!-- <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"/> -->
+   <link href="./lib/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet"/>
+
+   <!-- CSS -->
+   <!-- <link href="./lib/css/style.css" rel="stylesheet"/> -->
+   <link href="./lib/css/style.rtl.css" rel="stylesheet"/>
+
+
+   <!-- ***** JS Files ***** -->
+
+   <!-- JQuery -->
+   <!-- <script src="./lib/js/jquery-3.6.0.min.js"></script> -->
+   <script src="./lib/kendo/js/jquery.min.js"></script>
+   <script src="./lib/kendo/js/jszip.min.js"></script>
+
+   <!-- Kendo JS https://www.telerik.com/kendo-jquery-ui -->
+   <script src="./lib/kendo/js/kendo.all.min.js"></script>
+
+   <!-- JavaScript -->
+   <script src="./lib/js/jquery.mousewheel.min.js"></script>
+    <!-- <script src="./lib/js/CommonFunctions.js"></script> -->
+
+   
+
+   
+   <title>Home Exercise</title>
+
+</head>
+
+<body class="d-flex flex-column h-100 k-rtl" style="overflow-x: hidden;">
+   <main class="page-wrapper flex-shrink-0">
+      
+      <section class="container">
+         <h4>لجنة السيطرة</h4>
+         <div class="row">
+            <div class="col-12">
+               
+               <div>
+                  <div class="k-content">
+
+                     <div class="k-tabstrip-wrapper">
+                        <div class="k-spreadsheet-quick-access pe-3">
+                           <div class="quick-access">
+                           <button class="list-btn k-button k-flat k-button-icon" style="font-size: 15pt;">
+                              <span class="material-icons-outlined">
+                                 toc
+                              </span>
+                           </button>
+                           <button class="calendar-btn k-button k-flat k-button-icon" style="font-size: 15pt;">
+                              <span class="material-icons-outlined">
+                                 date_range
+                              </span>
+                           </button>
+                           </div>
+
+                           <button type="button" id="wOpenA" class="k-button k-tertiary ms-2" >
+                              <span class="material-icons-outlined">add</span>
+                              إضافة
+                           </button>
+                        </div>
+                        <div class="k-tabstrip">
+                        <ul>
+                           <li>
+                              الفرضيات
+                           </li>
+                           <li class="k-state-active">
+                              التمارين
+                           </li>
+                        </ul>
+                        <div class="hypotheses">
+                           <div class="search-section">
+                              <div class="row">
+                                 <div class="col">
+                                    <span class="k-textbox k-space-left w-100">
+                                       <input type="text" id="icon-left" class="w-100" placeholder="بحث بالفرضيات" />
+                                       <span class="material-icons-outlined ">
+                                          search
+                                       </span>
+                                   </span>
+
+                                 </div>
+                                 <div class="col-auto ms-auto">
+                                    
+                                    
+                                    <select id="" class="k-dropdownclass" aria-label="Default select example">
+                                       <option selected>Open this select</option>
+                                       <option value="1">One</option>
+                                       <option value="2">Two</option>
+                                       <option value="3">Three</option>
+                                     </select>
+                                     
+                                 </div>
+                              </div>
+                           </div>
+                           
+                           <div class="list-section">
+                              <div class="item d-flex align-items-center">
+                                 <div class="item-name">
+                                    فرضية حادث غرق لمجموعة أشخاص 
+                                 </div>
+                                
+                                 <div class="d-flex align-items-center ms-auto align-self-end">
+                                    <div class="">
+                                       <a class="k-button k-flat k-button-icon">
+                                          <span class="material-icons-outlined">
+                                             delete
+                                          </span>
+                                       </a>
+                                    </div>
+                                    <div>
+                                       <a class="k-button k-flat k-button-icon">
+                                          <span class="material-icons-outlined">
+                                             edit
+                                          </span>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="item d-flex align-items-center">
+                                 <div class="item-name">
+                                    فرضية حادث غرق لمجموعة أشخاص 
+                                 </div>
+                                 <div class="d-flex align-items-center ms-auto align-self-end">
+                                    <div class="">
+                                       <a class="k-button k-flat k-button-icon">
+                                          <span class="material-icons-outlined">
+                                             delete
+                                          </span>
+                                       </a>
+                                    </div>
+                                    <div>
+                                       <a class="k-button k-flat k-button-icon">
+                                          <span class="material-icons-outlined">
+                                             edit
+                                          </span>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="item d-flex align-items-center">
+                                 <div class="item-name">
+                                    فرضية حادث غرق لمجموعة أشخاص 
+                                 </div>
+                                 <div class="d-flex align-items-center ms-auto align-self-end">
+                                    <div class="">
+                                       <a class="k-button k-flat k-button-icon">
+                                          <span class="material-icons-outlined">
+                                             delete
+                                          </span>
+                                       </a>
+                                    </div>
+                                    <div>
+                                       <a class="k-button k-flat k-button-icon">
+                                          <span class="material-icons-outlined">
+                                             edit
+                                          </span>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="item d-flex align-items-center">
+                                 <div class="item-name">
+                                    فرضية حادث غرق لمجموعة أشخاص 
+                                 </div>
+                                 <div class="d-flex align-items-center ms-auto align-self-end">
+                                    <div class="">
+                                       <a class="k-button k-flat k-button-icon">
+                                          <span class="material-icons-outlined">
+                                             delete
+                                          </span>
+                                       </a>
+                                    </div>
+                                    <div>
+                                       <a class="k-button k-flat k-button-icon">
+                                          <span class="material-icons-outlined">
+                                             edit
+                                          </span>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="item d-flex align-items-center">
+                                 <div class="item-name">
+                                    فرضية حادث غرق لمجموعة أشخاص 
+                                 </div>
+                                 <div class="d-flex align-items-center ms-auto align-self-end">
+                                    <div class="">
+                                       <a class="k-button k-flat k-button-icon">
+                                          <span class="material-icons-outlined">
+                                             delete
+                                          </span>
+                                       </a>
+                                    </div>
+                                    <div>
+                                       <a class="k-button k-flat k-button-icon">
+                                          <span class="material-icons-outlined">
+                                             edit
+                                          </span>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="item d-flex align-items-center">
+                                 <div class="item-name">
+                                    فرضية حادث غرق لمجموعة أشخاص 
+                                 </div>
+                                 <div class="d-flex align-items-center ms-auto align-self-end">
+                                    <div class="">
+                                       <a class="k-button k-flat k-button-icon">
+                                          <span class="material-icons-outlined">
+                                             delete
+                                          </span>
+                                       </a>
+                                    </div>
+                                    <div>
+                                       <a class="k-button k-flat k-button-icon">
+                                          <span class="material-icons-outlined">
+                                             edit
+                                          </span>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+
+
+                           </div>
+
+                           <!-- WindowA-->
+                           <div id="windowA"></div>
+
+                              <script>
+                                 
+
+                                 $(document).ready(function () {
+                                    //$(".window").kendoWindow();
+                                    var
+                                    window = $('#windowA'),
+                                    wopen = $("#wOpenA"),
+                                    wclose = $("#wCloseA");
+
+                                    outside = $(".k-overlay");
+
+                                    wopen.click(function () {
+                                       window.data("kendoWindow").open();
+                                    });
+                                    
+                                    
+                                    function onClose() {}
+
+                                    // for back button
+                                    wclose.click(function () {
+                                       window.data("kendoWindow").close();
+                                    });
+
+                                    // for Close on click outside
+                                    outside.click(function () {
+                                       window.data("kendoWindow").close();
+                                    });                                   
+
+
+
+                                    window.kendoWindow({
+                                       width: "750px",
+                                       height: "100vh",
+                                       closable: true,
+                                       modal: true,
+                                       visible: false,
+                                       title: false,
+                                       close: onClose,
+                                       
+
+                                       
+
+                                       position: {
+                                          top: "0px",
+                                          left: "0%"
+                                       },
+                                       animation: {
+                                          open: {
+                                             effects: "slideIn:right",
+                                          },
+                                          close: {
+                                             effects: "slideIn:right" ,
+                                             reverse: true
+                                          }
+                                       },
+                                       content: "./pages/exercise/hypothesis.html",
+                                    }).data("kendoWindow");
+                                 });
+                              </script>
+                        </div>
+                        <div class="exercises">
+                           
+                           
+                           <div class="list-view">
+                           <div class="search-section">
+                              <div class="row">
+                                 <div class="col">
+                                    <span class="k-textbox k-space-left w-100">
+                                       <input type="text" id="icon-left" class="w-100" placeholder="بحث بالتمارين" />
+                                       <span class="material-icons-outlined ">
+                                          search
+                                       </span>
+                                   </span>
+
+                                 </div>
+                                 <div class="col-auto ms-auto d-flex ">
+                                    <div class="me-3">
+                                       <input title="datetimepicker" class="k-datepickerclass" id="a2" placeholder="من"/>
+                                    </div>
+                                    <div class="me-3">
+                                       <input title="datetimepicker" class="k-datepickerclass" id="a2" placeholder="إلى"/>
+                                    </div>
+                                    <div>
+                                    <select id="" class="k-dropdownclass" aria-label="Default select example">
+                                       <option selected>الحالة</option>
+                                       <option value="1">حالة</option>
+                                       <option value="2">حالة</option>
+                                       <option value="3">حالة</option>
+                                     </select>
+                                    </div>
+                                     
+                                 </div>
+                              </div>
+                           </div>
+                           
+                           <div class="list-section">
+                              <div class="item d-flex align-items-center">
+                                 <div class="item-color me-2 align-self-stretch" style="background: #92278F;"></div>
+                                 <div class="item-queue me-2 align-self-stretch  d-flex  align-items-top">
+                                     <div>1<span>.</span></div>
+                                 </div>
+                                 <div class="d-flex flex-column">
+                                    <div class="item-name fw-bold mb-1 d-flex">
+                                       <div>ورد اتصال لمركز العمليات بوجود حادثة غرق لمجموعة اشخاص</div>
+                                   </div>
+                                    <div class="item-info d-flex align-items-center">
+                                       <div class="d-flex align-items-center me-4">
+                                           <div class="info-lable">تاريخ بداية التمرين:</div>
+                                           <div class="info-data">
+                                              <span>07/05/2021 - 09:27am</span>
+                                           </div>
+                                       </div>
+                                       <div class="d-flex align-items-center">
+                                           <div class="info-lable">مدة المطلب بالدقيقة:</div>
+                                           <div class="info-data">
+                                             <span>07/05/2021 - 09:27am</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                                     <div class="item-describe">
+                                         ورد اتصال لمركز العمليات بوجود حادثة غرق لمجموعة اشخاص
+                                     </div>
+                                 </div>
+                                 <div class="d-flex flex-column  align-self-stretch ms-auto">
+                                    <div class="d-flex">
+
+                                    <div class="ms-auto">
+                                       <a id="" class="k-targetmenuclass k-button k-flat k-button-icon">
+                                          <span class="material-icons-outlined">
+                                             more_vert
+                                          </span>
+                                       </a>
+
+                                       <ul class="k-contextmenuclass">
+                                          <li>تفعيل التمرين</li>
+                                          <li>نسخ التمرين</li>
+                                       </ul>
+                                    </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-auto align-self-end mt-auto">
+                                       <div class="status inactive me-1">تفعيل التمرين</div> 
+                                       <div class="">
+                                          <a class="k-button k-flat k-button-icon">
+                                             <span class="material-icons-outlined">
+                                                play_arrow
+                                             </span>
+                                          </a>
+                                       </div> 
+                                       
+                                       <div class="">
+                                          <a class="k-button k-flat k-button-icon">
+                                                <span class="material-icons-outlined">
+                                                   delete
+                                                </span>
+                                          </a>
+                                       </div>
+                                       
+                                       <div>
+                                          <a class="k-button k-flat k-button-icon">
+                                                <span class="material-icons-outlined">
+                                                   edit
+                                                </span>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                             </div>
+                              <div class="item d-flex align-items-center">
+                                 <div class="item-color me-2 align-self-stretch" style="background: #92278F;"></div>
+                                 <div class="item-queue me-2 align-self-stretch  d-flex  align-items-top">
+                                     <div>1<span>.</span></div>
+                                 </div>
+                                 <div class="d-flex flex-column">
+                                    <div class="item-name fw-bold mb-1 d-flex">
+                                       <div>ورد اتصال لمركز العمليات بوجود حادثة غرق لمجموعة اشخاص</div>
+                                   </div>
+                                    <div class="item-info d-flex align-items-center">
+                                       <div class="d-flex align-items-center me-4">
+                                           <div class="info-lable">تاريخ بداية التمرين:</div>
+                                           <div class="info-data">
+                                              <span>07/05/2021 - 09:27am</span>
+                                           </div>
+                                       </div>
+                                       <div class="d-flex align-items-center">
+                                           <div class="info-lable">مدة المطلب بالدقيقة:</div>
+                                           <div class="info-data">
+                                             <span>07/05/2021 - 09:27am</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                                     <div class="item-describe">
+                                         ورد اتصال لمركز العمليات بوجود حادثة غرق لمجموعة اشخاص
+                                     </div>
+                                 </div>
+                                 <div class="d-flex flex-column  align-self-stretch ms-auto">
+                                    <div class="d-flex">
+
+                                    <div class="ms-auto">
+                                       <a id="" class="k-targetmenuclass k-button k-flat k-button-icon">
+                                          <span class="material-icons-outlined">
+                                             more_vert
+                                          </span>
+                                       </a>
+
+                                       <ul class="k-contextmenuclass">
+                                          <li>تفعيل التمرين</li>
+                                          <li>نسخ التمرين</li>
+                                       </ul>
+                                    </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-auto align-self-end mt-auto">
+                                       <div class="status active me-1">مفعل</div>                                        
+                                       <div class="">
+                                          <a class="k-button k-flat k-button-icon">
+                                                <span class="material-icons-outlined">
+                                                   delete
+                                                </span>
+                                          </a>
+                                       </div>
+                                       
+                                       <div>
+                                          <a class="k-button k-flat k-button-icon">
+                                                <span class="material-icons-outlined">
+                                                   edit
+                                                </span>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                             </div>
+                              <div class="item d-flex align-items-center">
+                                 <div class="item-color me-2 align-self-stretch" style="background: #92278F;"></div>
+                                 <div class="item-queue me-2 align-self-stretch  d-flex  align-items-top">
+                                     <div>1<span>.</span></div>
+                                 </div>
+                                 <div class="d-flex flex-column">
+                                    <div class="item-name fw-bold mb-1 d-flex">
+                                       <div>ورد اتصال لمركز العمليات بوجود حادثة غرق لمجموعة اشخاص</div>
+                                   </div>
+                                    <div class="item-info d-flex align-items-center">
+                                       <div class="d-flex align-items-center me-4">
+                                           <div class="info-lable">تاريخ بداية التمرين:</div>
+                                           <div class="info-data">
+                                              <span>07/05/2021 - 09:27am</span>
+                                           </div>
+                                       </div>
+                                       <div class="d-flex align-items-center">
+                                           <div class="info-lable">مدة المطلب بالدقيقة:</div>
+                                           <div class="info-data">
+                                             <span>07/05/2021 - 09:27am</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                                     <div class="item-describe">
+                                         ورد اتصال لمركز العمليات بوجود حادثة غرق لمجموعة اشخاص
+                                     </div>
+                                 </div>
+                                 <div class="d-flex flex-column  align-self-stretch ms-auto">
+                                    <div class="d-flex">
+
+                                    <div class="ms-auto">
+                                       <a id="" class="k-targetmenuclass k-button k-flat k-button-icon">
+                                          <span class="material-icons-outlined">
+                                             more_vert
+                                          </span>
+                                       </a>
+
+                                       <ul class="k-contextmenuclass">
+                                          <li>تفعيل التمرين</li>
+                                          <li>نسخ التمرين</li>
+                                       </ul>
+                                    </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-auto align-self-end mt-auto">
+                                       <div class="status canceled me-1">ملغي</div>                                       
+                                       <div class="">
+                                          <a class="k-button k-flat k-button-icon">
+                                                <span class="material-icons-outlined">
+                                                   delete
+                                                </span>
+                                          </a>
+                                       </div>
+                                       
+                                       <div>
+                                          <a class="k-button k-flat k-button-icon">
+                                                <span class="material-icons-outlined">
+                                                   edit
+                                                </span>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                             </div>
+                              <div class="item d-flex align-items-center">
+                                 <div class="item-color me-2 align-self-stretch" style="background: #92278F;"></div>
+                                 <div class="item-queue me-2 align-self-stretch  d-flex  align-items-top">
+                                     <div>1<span>.</span></div>
+                                 </div>
+                                 <div class="d-flex flex-column">
+                                    <div class="item-name fw-bold mb-1 d-flex">
+                                       <div>ورد اتصال لمركز العمليات بوجود حادثة غرق لمجموعة اشخاص</div>
+                                   </div>
+                                    <div class="item-info d-flex align-items-center">
+                                       <div class="d-flex align-items-center me-4">
+                                           <div class="info-lable">تاريخ بداية التمرين:</div>
+                                           <div class="info-data">
+                                              <span>07/05/2021 - 09:27am</span>
+                                           </div>
+                                       </div>
+                                       <div class="d-flex align-items-center">
+                                           <div class="info-lable">مدة المطلب بالدقيقة:</div>
+                                           <div class="info-data">
+                                             <span>07/05/2021 - 09:27am</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                                     <div class="item-describe">
+                                         ورد اتصال لمركز العمليات بوجود حادثة غرق لمجموعة اشخاص
+                                     </div>
+                                 </div>
+                                 <div class="d-flex flex-column  align-self-stretch ms-auto">
+                                    <div class="d-flex">
+
+                                    <div class="ms-auto">
+                                       <a id="" class="k-targetmenuclass k-button k-flat k-button-icon">
+                                          <span class="material-icons-outlined">
+                                             more_vert
+                                          </span>
+                                       </a>
+
+                                       <ul class="k-contextmenuclass">
+                                          <li>تفعيل التمرين</li>
+                                          <li>نسخ التمرين</li>
+                                       </ul>
+                                    </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-auto align-self-end mt-auto">
+                                       <div class="status inactive me-1">تفعيل التمرين</div> 
+                                       <div class="">
+                                          <a class="k-button k-flat k-button-icon">
+                                             <span class="material-icons-outlined">
+                                                play_arrow
+                                             </span>
+                                          </a>
+                                       </div> 
+                                       
+                                       <div class="">
+                                          <a class="k-button k-flat k-button-icon">
+                                                <span class="material-icons-outlined">
+                                                   delete
+                                                </span>
+                                          </a>
+                                       </div>
+                                       
+                                       <div>
+                                          <a class="k-button k-flat k-button-icon">
+                                                <span class="material-icons-outlined">
+                                                   edit
+                                                </span>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                             </div>
+
+
+
+                           </div>
+                            </div>
+                            <div class="calendar-view">
+                              <div id="example" class="k-content">
+
+                                 <div class="k-rtl">
+                                     <div id="scheduler"></div>
+                                 </div>
+                             
+                             </div>
+                             <script>
+                              $(function() {
+                                  $("#scheduler").kendoScheduler({
+                                      date: new Date("2013/6/13"),
+                                      startTime: new Date("2013/6/13 7:00"),
+                                      height: 600,
+                                      timezone: "Etc/UTC",
+                                      views: [
+                                          "day",
+                                          { type: "week", selected: true },
+                                          "month",
+                                          "agenda"
+                                      ],
+                                      timezone: "Etc/UTC",
+                                      dataSource: {
+                                          batch: true,
+                                          transport: {
+                                              read: {
+                                                  url: "https://demos.telerik.com/kendo-ui/service/tasks",
+                                                  dataType: "jsonp"
+                                              },
+                                              update: {
+                                                  url: "https://demos.telerik.com/kendo-ui/service/tasks/update",
+                                                  dataType: "jsonp"
+                                              },
+                                              create: {
+                                                  url: "https://demos.telerik.com/kendo-ui/service/tasks/create",
+                                                  dataType: "jsonp"
+                                              },
+                                              destroy: {
+                                                  url: "https://demos.telerik.com/kendo-ui/service/tasks/destroy",
+                                                  dataType: "jsonp"
+                                              },
+                                              parameterMap: function(options, operation) {
+                                                  if (operation !== "read" && options.models) {
+                                                      return {models: kendo.stringify(options.models)};
+                                                  }
+                                              }
+                                          },
+                                          schema: {
+                                              model: {
+                                                  id: "taskID",
+                                                  fields: {
+                                                      taskID: { from: "TaskID", type: "number" },
+                                                      title: { from: "Title", defaultValue: "No title", validation: { required: true } },
+                                                      start: { type: "date", from: "Start" },
+                                                      end: { type: "date", from: "End" },
+                                                      startTimezone: { from: "StartTimezone" },
+                                                      endTimezone: { from: "EndTimezone" },
+                                                      description: { from: "Description" },
+                                                      recurrenceId: { from: "RecurrenceID" },
+                                                      recurrenceRule: { from: "RecurrenceRule" },
+                                                      recurrenceException: { from: "RecurrenceException" },
+                                                      ownerId: { from: "OwnerID", defaultValue: 1 },
+                                                      isAllDay: { type: "boolean", from: "IsAllDay" }
+                                                  }
+                                              }
+                                          }
+                                      }
+                                  });
+                              });
+                              </script>
+                            </div>
+                        </div>
+                     </div>
+                     </div>
+                  </div>
+
+                 
+               </div>
+
+
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="footer mt-auto">
+      <div class="container">
+         <!-- Links-->
+         <div class="row">
+            <div class="col text-start">
+               منظومة التمارين - منصة الأزمات
+            </div>
+            <div class="col-auto text-end">
+               <a href="#" class="link">English</a>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+
+   <script>
+      $(document).ready(function(){
+         $(".calendar-view").show();
+         $(".calendar-btn").addClass("active");
+         $(".list-view").hide();
+          // Hide displayed paragraphs with different speeds
+          $(".list-btn").click(function(){
+              $(".list-view").show("fadeIn");
+              $(".calendar-view").hide("fadeIn");
+
+              $(".list-btn").addClass("active");
+              $(".calendar-btn").removeClass("active")
+          });
+          
+          // Show hidden paragraphs with different speeds
+          $(".calendar-btn").click(function(){
+               $(".list-view").hide("fadeIn");
+              $(".calendar-view").show("fadeIn");
+
+              $(".list-btn").removeClass("active");
+              $(".calendar-btn").addClass("active")
+          });
+      });
+      </script>
+
+   
+
+
+</body>
+</html>

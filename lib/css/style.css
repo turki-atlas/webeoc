@@ -1,0 +1,285 @@
+
+@import url("../fonts/icomoon/icomoon.css");
+@import url('../fonts/tajawal/tajawal.css');
+
+body{
+    direction: rtl;
+    font-family: 'Tajawal', 'Dubai', 'JFFlat', 'GE SS', serif, arial;
+}
+
+header.h-show{
+    min-height: 330px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+header .container{
+    z-index: 2;
+    position: relative;
+}
+.h-img{
+    background-color: #232323;
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 320px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+@media (min-width: 768px){
+    .h-img{
+        background-position: center center;
+    }
+}
+
+.h-gradient{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.95) );
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    bottom: 0px;
+    z-index: 2;
+}
+
+.logo{
+    width: auto;
+    height: 50px;
+}
+
+@media (min-width: 768px){
+.logo {
+    flex: 0 0 auto;
+    height: 65px;
+}
+}
+
+.logo img{
+    width: auto;
+    height:100%;
+}
+
+.page-theme{
+    margin-top: -80px;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.card-them{
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-shadow: 0 0rem 1rem rgba(0,0,0,.15)!important;
+    border-radius: .75rem;
+    padding: 20px 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    pointer-events: visible;
+    min-height: calc(100% - 20px);
+}
+
+a.card-them{
+    text-decoration: none;
+}
+
+    .card-them:hover{
+        background: #232323;
+        border: 1px solid #231F20;
+        box-shadow: 0 0rem 1rem rgba(0,0,0,.25)!important;
+        text-decoration: none;
+        outline: none;
+        border-width: 0px;
+        border-style: initial;
+        border-color: initial;
+        border-image: initial;
+    }
+
+
+.card-them .c-icon{
+    background: #EAEAEA;
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    color: #232323;
+    font-size: 2.3rem;
+}
+
+    .card-them:hover .c-icon{
+        background: #000000;
+        color: #FFFFFF;
+    }
+
+.card-them .c-icon em{
+    background: #F22134;
+    border-radius: 0.75rem;
+    font-style: normal;
+    width: auto;
+    height: auto;
+    color: #FFFFFF;
+    font-size: 1rem;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    padding: 1px 5px;
+}
+
+.card-them:hover .c-icon em{
+    color: #232323;
+}
+
+.card-them .title{
+    text-align: center;
+    padding-top: 5px;
+    color: #232323;
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+}
+
+    .card-them:hover .title{
+        color: #FFFFFF;
+    }
+
+.nav.nav-pills{
+    position: relative;
+}
+.nav-link.nav-link-custom {
+    display: block;
+    padding: .5rem 0.5rem;
+    margin: 0px 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    border-radius: 0px;
+}
+
+.nav-pills .nav-link.nav-link-custom.active, .nav-pills .show>.nav-link.nav-link-custom {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    border-radius: 0px;
+}
+
+footer.footer{
+    background: #EAEAEA;
+    color: #232323;
+    font-size: 0.9rem;
+    padding: 7px 0;
+}
+
+
+footer .link{
+    color:#2c2c2c;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer .link:hover{
+    color:#050505;
+    font-weight: bold;
+}
+
+.h-news{
+    z-index: 3;
+    height: 80px;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.h-news .img-none{
+    height: 80px;
+    width: 340px;
+}
+
+.nav-item{
+    pointer-events: visible;
+}
+
+.h-news .carousel-caption {
+    position: absolute;
+    left: 0;
+    top: 1.25rem;
+    right: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
+    color: #fff;
+    text-align: right;
+}
+
+.h-news .carousel-indicators {
+    position: absolute;
+    left: 0;
+    bottom: inherit;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: right;
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 0.0rem;
+    margin-right: 0;
+    list-style: none;
+}
+
+.h-news .carousel-caption p{
+    padding-bottom: 0px;
+    font-size: 0.8rem;
+}
+
+.description-tab{
+  display: none;
+  position: absolute;
+  bottom: 42px;
+  right: 0px;
+  opacity: 0.9;
+  font-size: 0.8rem;
+}
+
+.description-tab p{
+    margin-bottom: 0px;
+}
+
+.active .description-tab{
+    display: block;
+}
+
+
+/* inline */
+
+a.card-them:hover {
+    text-decoration: none;
+    outline: none;
+    border-color: #000000;
+    border-width: 1px;
+    border-image: initial;
+    border-style: solid;
+  }
+  .card-them .c-icon{
+    background: #EAEAEA;
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    color: #232323;
+    font-size: 2.3rem;
+  }
+  
+  .card-them:hover .c-icon{
+    background: #000000;
+    color: #FFFFFF;
+  }
+          a.card-them:hover {
+            background: #383838;
+            border: 1px solid #1d1d1d;
+          }
+          
+          a.card-them:hover .c-icon {
+            background: #1d1d1d;
+            color: #FFFFFF;
+          }
