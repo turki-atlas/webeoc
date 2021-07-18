@@ -842,9 +842,6 @@
 
 
 
-
-
-
     <script>
         $(document).ready(function () {
             $(".k-inputclass").kendoTextBox();
@@ -862,32 +859,35 @@
                 value: new Date(),
                 dateInput: true
             });
-
+     
             $(".k-datepickerclass").kendoDatePicker({
                 value: new Date(),
                 dateInput: true
             });
-
+     
             $(".k-textareaclass").kendoTextArea({
                 rows:3,
                 maxLength:200,
             });
-
+     
             $(".k-multiselectclass").kendoMultiSelect({
                 autoClose: false
             });
-
+     
             $(".k-colorpickerclass").kendoColorPicker({
                 value: "#ffffff",
                 buttons: false
             });
             $(".k-uploadclass").kendoUpload();
-
+     
             $(".k-contextmenuclass").kendoContextMenu({
                 target: ".k-targetmenuclass",
                 showOn: "click"
             });
            
         });
-    </script>
+     </script>
+     
+
+
 </div>
